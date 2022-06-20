@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="FNTool.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FNTool.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="sdkdefines.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="spoof_call.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="safecall.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="xor.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>defines</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{00f3de48-c290-4490-88aa-c28bc7b3c326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="defines">
+      <UniqueIdentifier>{3ef1e2d1-50b5-4a37-a8ca-44522d45986d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="spoofinternal.asm">
+      <Filter>defines</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="notes.txt" />
+  </ItemGroup>
+</Project>

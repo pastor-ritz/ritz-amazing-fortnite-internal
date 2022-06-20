@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="FNTool">
+      <UniqueIdentifier>{6026f970-e8ce-43c4-bf33-2717af7bb903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spoofer">
+      <UniqueIdentifier>{a660c3aa-420f-4b6c-b25f-c97a9e70270d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{9df62fb2-e369-4fe7-a964-a9533b7e178e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{0fd6bc86-9b2e-45f6-9ce1-9b3157c0df8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="FNTool.cpp">
+      <Filter>FNTool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FNTool.h">
+      <Filter>FNTool</Filter>
+    </ClInclude>
+    <ClInclude Include="spoof_call.h">
+      <Filter>Spoofer</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="sdkdefines.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="spoofinternal.asm">
+      <Filter>Spoofer</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

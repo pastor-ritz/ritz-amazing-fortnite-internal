@@ -1,0 +1,58 @@
+MoveUp_World - 0x818 - https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/GameFramework/ADefaultPawn/MoveUp_World/
+K2_OnEndCrouch - 0x2B8 - https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/GameFramework/ACharacter/K2_OnEndCrouch/ (maybe 0x108 but prob not) or 0xE0
+GetActorBounds - 0x340 - https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/GameFramework/AActor/GetActorBounds/
+GetPlayerName - - https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/GameFramework/APlayerState/GetPlayerName/ 0x118 or 0x2B8 or 0x108  0x718
+
+
+Vector3 (*o_K2_GetActorRotation)(); //0x688
+Vector3 K2_GetActorRotation() {
+	std::cout << "Called" << "\n";
+	return Vector3(90, 0, 0);
+}
+//if (!temponce) {
+	//	auto uworld = ((GWorld*)(*(uintptr_t*)(ue::cached::signatures::GWorld)));
+	//	auto LocalPawn = uworld->OwningGameInstance()->LocalPlayers()->LocalPlayer()->PlayerController()->LocalPawn();
+	//	
+	//	auto MoveUp_World_VFTable = *(uintptr_t*)(uintptr_t(LocalPawn));
+	//	auto MoveUp_World_addr = *(uintptr_t*)(MoveUp_World_VFTable + 0x818); //MoveUp_World
+	//	//MessageBox(0, L"Hooked!", 0, 0);
+	//	int v0 = (int)*(BYTE*)(MoveUp_World_addr);
+	//	std::cout << v0 << "\n";
+
+	//	MH_Initialize();
+	//	MH_CreateHook((PVOID)MoveUp_World_addr, hk_MoveUp_World, reinterpret_cast<PVOID*>(&o_MoveUp_World));
+	//	MH_EnableHook((PVOID)MoveUp_World_addr);
+	//	temponce = true;
+	//}
+
+void Emote(const struct FName& AssetName);
+void AllowShowMainMap(bool bAllowShow);
+void K2_OnMovementModeChanged(TEnumAsByte<EMovementMode> PrevMovementMode, TEnumAsByte<EMovementMode> NewMovementMode, unsigned char PrevCustomMode, unsigned char NewCustomMode);
+void MeleeSwingRight_End();
+void SetActorScale3D(const struct FVector& NewScale3D);
+void SetWorldScale3D(const struct FVector& NewScale);
+	void SetVisibility(bool bNewVisibility, bool bPropagateToChildren);
+	bool IsExceedingMaxSpeed(float MaxSpeed);
+	class AWorldSettings : public AInfo
+	class UFloatingPawnMovement : public UPawnMovementComponent
+
+		void SetWeaponData(class UFortWeaponItemDefinition* InWeaponData);
+
+GetAccelerationPercent
+
+GetActorLocation(TheViewTarget, &out_location)
+GetCameraViewPoint(PlayerCameraManager, out_Location, out_Rotation);
+//sub_7FF6BD2356A8 = hk_GetCameraCachePOV
+
+48 89 5C 24 18 55 57 41 54 41 56 41 57 48 8B EC 48 83 EC 40 - 2 floats i think and get the vtable of current weapon
+
+143 - GetWeaponRateOfFireModifier - (__int64 a1, __int64 a2, float *a3) - float
+GetMagazineAmmoCount - int - 66
+GetTimeToNextFire - float - 101
+83 - float GetProjectileSpeed(float ChargePercent);
+
+AFortPlayerControllerAthena	MatchReport	0x40a8	UAthenaPlayerMatchReport*
+GetTotalScoreEarned - int - 5 - UAthenaPlayerMatchReport
+float STATIC_GetBuildingHealthPercentage(class ABuildingActor* BuildingActor); - 0x8A8 - (__int64 a1, _QWORD *a2, float *a3)
+unsigned char STATIC_GetActorTeam(class AActor* Actor);
+//STATIC_K2_GiveBuildingResource 
