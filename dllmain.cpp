@@ -40,12 +40,12 @@ void DrawMenu() {
 			ZeroGUI::Checkbox("Skeleton Esp", &Settings::SkeletonESP);
 			ZeroGUI::Checkbox("Line Esp", &Settings::LinesESP);
 			ZeroGUI::Checkbox("Name Esp", &Settings::PlayerNameESP);
-			ZeroGUI::Checkbox("Distance Esp", &Settings::PlayerNameESP);
-			ZeroGUI::Checkbox("Level Esp", &Settings::PlayerNameESP);
-			ZeroGUI::Checkbox("Kills Esp", &Settings::PlayerNameESP);
-			ZeroGUI::Checkbox("Platform Esp", &Settings::PlayerNameESP);
-			ZeroGUI::Checkbox("Weapon Esp", &Settings::PlayerNameESP);
-			ZeroGUI::Checkbox("Ammo Esp", &Settings::PlayerNameESP);
+			ZeroGUI::Checkbox("Distance Esp", &Settings::DistanceESP);
+			ZeroGUI::Checkbox("Level Esp", &Settings::LevelESP);
+			ZeroGUI::Checkbox("Kills Esp", &Settings::KillsESP);
+			ZeroGUI::Checkbox("Platform Esp", &Settings::PlatformESP);
+			ZeroGUI::Checkbox("Weapon Esp", &Settings::EnemyWeaponESP);
+			ZeroGUI::Checkbox("Ammo Esp", &Settings::AmmoESP);
 
 		}
 		if (tab == 2) {
